@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/COSC1200.iml" filepath="$PROJECT_DIR$/.idea/COSC1200.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ICE0/ICE0.iml" filepath="$PROJECT_DIR$/ICE0/ICE0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ICE1/ICE1.iml" filepath="$PROJECT_DIR$/ICE1/ICE1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/In Class Practice/In Class Practice.iml" filepath="$PROJECT_DIR$/In Class Practice/In Class Practice.iml" />
+    </modules>
+  </component>
+</project>
