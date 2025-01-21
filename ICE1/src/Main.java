@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Program: ICE 1
  * Description: A Program for printing information about the student
@@ -7,18 +5,19 @@ import java.util.Scanner;
  * Date: Jan 16th, 2025
  * @author Nathan Ferlaino
  */
+import java.util.Scanner;
+
 
 public class Main {
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        // Declare userInput for later use in the program
         float userInput = 0;
 
-        System.out.println("Hello and welcome! Name: Nathan Ferlaino");
-        System.out.println("");
-        System.out.println("Banner ID: 100993560");
-
+        // Prints out the introduction and user information
+        System.out.println("Hello and welcome!\nName: Nathan Ferlaino\nBanner ID: 100993560");
         System.out.println("A quote that I like is: “So many books, so little time.” ― Frank Zappa ");
 
+        // Creates a variable for the exit condition and sets it to false
         boolean exitNow = false;
         while(!exitNow){
             try{
