@@ -9,7 +9,6 @@ public class NumberGuessing {
             int lowerEnd = 0;
             int upperEnd = 100;
             int lifeCounter = 5;
-            Scanner input = new Scanner(System.in);
             int userGuess = 0;
 
             int magicNumber = (int)(Math.random() * 101);
@@ -21,6 +20,7 @@ public class NumberGuessing {
                 while (!isValid) {
                     userGuess = 0;
                     try {
+                        Scanner input = new Scanner(System.in);
                         System.out.println("Guess a number within the range of [" + lowerEnd + ", " + upperEnd + "] :");
                         userGuess = input.nextInt();
                         if ((userGuess < lowerEnd) || (userGuess > upperEnd)) {
@@ -54,6 +54,7 @@ public class NumberGuessing {
             String userChoice = "";
             while (!validInput){
                 try {
+                    Scanner input = new Scanner(System.in);
                     System.out.println("Would you like to play again? [Y/N]");
                     userChoice = input.nextLine();
                     input.nextLine();
