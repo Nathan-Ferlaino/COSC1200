@@ -83,11 +83,11 @@ public class Main {
         positionY = (initialSpeed * Math.sin(Math.toRadians(launchAngle)) * time) - (0.5 * GRAVITY * Math.pow(time,2));
 
         // Display the output to the user using printf in order to round output to two decimal places
-        System.out.printf("The x position of your object at %.2f second(s) is %.2f",time, positionX);
+        System.out.printf("The x position of your object at %.2f second(s) is %.2fm",time, positionX);
         // Formatting
         System.out.println();
         // Display the output to the user using printf in order to round output to two decimal places
-        System.out.printf("The y position of your object at %.2f second(s) is %.2f",time, positionY);
+        System.out.printf("The y position of your object at %.2f second(s) is %.2fm",time, positionY);
         // Formatting
         System.out.println();
 
