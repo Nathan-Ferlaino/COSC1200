@@ -11,8 +11,6 @@ import static java.lang.Math.abs;
 
 public class Main {
     public static void main(String[] args) {
-        // Declare the variable for the do while loop
-        boolean runAgain = true;
         // Declare the constant for acceleration due to gravity
         final double GRAVITY = 9.8;
 
@@ -42,6 +40,7 @@ public class Main {
                 System.out.println("Invalid input! Please enter a number");
             }
         }
+
         // Reset validInput for the next input
         validInput = false;
         while(!validInput){
@@ -88,8 +87,5 @@ public class Main {
         System.out.println();
         // Display the output to the user using printf in order to round output to two decimal places
         System.out.printf("The y position of your object at %.2f second(s) is %.2fm",time, positionY);
-        // Formatting
-        System.out.println();
-
     }
 }
