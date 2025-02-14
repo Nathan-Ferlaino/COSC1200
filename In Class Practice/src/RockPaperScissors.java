@@ -16,7 +16,7 @@ public class RockPaperScissors {
         int userWinGoal = 0;
         while (!validInput){
             try {
-                Scanner input = new Scanner(System.in);
+
                 System.out.println("How many wins would you like to play to?");
                 userWinGoal = input.nextInt();
                 validInput = true;
