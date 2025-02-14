@@ -70,6 +70,17 @@ public class Main {
             validInput = false;
         }
 
+        double[] dailyAverageTemperature = new double[numberOfDays];
+        double overallAverage = 0.0;
+
+        for(int i = 0; i < numberOfDays;i++){
+            dailyAverageTemperature[i] = (dayTemperaturesHigh[i] + dayTemperaturesLow[i])/2;
+            overallAverage += dailyAverageTemperature[i];
+        }
+        overallAverage = overallAverage/numberOfDays;
+
+
+
 
 
     }
