@@ -24,7 +24,7 @@ public class Main {
             }
         }
 
-        int[] dayTemperatures = new int[numberOfDays];
+        double[] dayTemperatures = new double[numberOfDays];
 
         validInput = false;
         double currentTemperature = 0.0;
@@ -34,6 +34,7 @@ public class Main {
                     System.out.println("Please enter the temperature for day " + (i+1));
                     currentTemperature = input.nextFloat();
                     if(currentTemperature >= -45 && currentTemperature <= 45) {
+                        dayTemperatures[i] = currentTemperature;
                         validInput = true;
                     }
                     else{
@@ -43,8 +44,8 @@ public class Main {
                     System.out.println("Please enter a valid choice!");
                 }
             }
+            validInput = false;
         }
-
 
     }
 }
