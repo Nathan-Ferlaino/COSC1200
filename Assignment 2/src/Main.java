@@ -97,7 +97,7 @@ public class Main {
             // For each day, grab the high and low temp from that day, average it, and store it in dailyAverageTemperature
             dailyAverageTemperature[i] = (dayTemperaturesHigh[i] + dayTemperaturesLow[i])/2;
             // Display a message showing the average temperature on that day rounded to 2 decimal places
-            System.out.printf("The average temperature on day %f was %.2f Degrees",(i+1), dailyAverageTemperature[i]);
+            System.out.printf("The average temperature on day %d was %.2f Degrees",(i+1), dailyAverageTemperature[i]);
             // add the temperature to the running total
             overallAverage += dailyAverageTemperature[i];
         }
@@ -119,10 +119,9 @@ public class Main {
             }
         }
 
-
-        System.out.println("The highest temperature recorded was " + highestTemperature + " Degrees");
-        System.out.println("The lowest temperature recorded was " + lowestTemperature + " Degrees");
-        System.out.println("The average temperature across all days was " + overallAverage + " Degrees");
+        System.out.printf("The highest temperature recorded was %.2f Degrees", highestTemperature);
+        System.out.printf("The lowest temperature recorded was %.2f Degrees", lowestTemperature);
+        System.out.printf("The average temperature across all days was %.2f Degrees", overallAverage);
 
     }
 }
