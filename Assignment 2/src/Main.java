@@ -1,7 +1,13 @@
+/**
+ * Program: Assignment 2
+ * Description: A Program for determining the high, low, and median
+ * temperature across a variable number of days
+ * Date: Feb 14th, 2025
+ * @author Nathan Ferlaino
+ */
+
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
@@ -24,17 +30,34 @@ public class Main {
             }
         }
 
-        double[] dayTemperatures = new double[numberOfDays];
+        double[] dayTemperaturesHigh = new double[numberOfDays];
+        double[] dayTemperaturesLow = new double[numberOfDays];
 
         validInput = false;
         double currentTemperature = 0.0;
-        for (int i = 0; i < dayTemperatures.length; i++){
+        for (int i = 0; i < numberOfDays; i++){
             while(!validInput){
                 try {
-                    System.out.println("Please enter the temperature for day " + (i+1));
+                    System.out.println("Please enter the daily high temperature for day " + (i+1));
                     currentTemperature = input.nextFloat();
                     if(currentTemperature >= -45 && currentTemperature <= 45) {
-                        dayTemperatures[i] = currentTemperature;
+                        dayTemperaturesHigh[i] = currentTemperature;
+                        validInput = true;
+                    }
+                    else{
+                        System.out.println("Please enter a temperature between -45 and 45 degrees");
+                    }
+                } catch (Exception e) {
+                    System.out.println("Please enter a valid choice!");
+                }
+            }
+            validInput = false;
+            while(!validInput){
+                try {
+                    System.out.println("Please enter the daily low temperature for day " + (i+1));
+                    currentTemperature = input.nextFloat();
+                    if(currentTemperature >= -45 && currentTemperature <= 45) {
+                        dayTemperaturesLow[i] = currentTemperature;
                         validInput = true;
                     }
                     else{
@@ -46,6 +69,8 @@ public class Main {
             }
             validInput = false;
         }
+
+
 
     }
 }
