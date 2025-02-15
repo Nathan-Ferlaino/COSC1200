@@ -120,9 +120,9 @@ public class Main {
             }
         }
 
-        System.out.printf("The highest temperature recorded was %.2f Degrees", highestTemperature);
-        System.out.printf("The lowest temperature recorded was %.2f Degrees", lowestTemperature);
-        System.out.printf("The average temperature across all days was %.2f Degrees", overallAverage);
+        System.out.printf("The highest temperature recorded was %.2f Degrees\n", highestTemperature);
+        System.out.printf("The lowest temperature recorded was %.2f Degrees\n", lowestTemperature);
+        System.out.printf("The average temperature across all days was %.2f Degrees\n", overallAverage);
 
     }
 }
