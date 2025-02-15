@@ -47,6 +47,7 @@ public class Main {
         for (int i = 0; i < numberOfDays; i++){
             while(!validInput){
                 try {
+                    Scanner input = new Scanner(System.in);
                     // Ask the user for the temperature of the current day and store that in currentTemperature
                     System.out.println("Please enter the daily high temperature for day " + (i+1));
                     currentTemperature = input.nextFloat();
@@ -68,6 +69,7 @@ public class Main {
             validInput = false;
             while(!validInput){
                 try {
+                    Scanner input = new Scanner(System.in);
                     System.out.println("Please enter the daily low temperature for day " + (i+1));
                     currentTemperature = input.nextFloat();
                     // Check to make sure the temperature is not higher than the daily high
