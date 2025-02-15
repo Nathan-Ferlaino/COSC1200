@@ -10,8 +10,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Declare a scanner object to be used throughout the program
-        Scanner input = new Scanner(System.in);
 
         // Set the condition for the while loop to false
         boolean validInput = false;
@@ -21,6 +19,7 @@ public class Main {
         // Set the condition of the while loop to valid input being true
         while (!validInput){
             try {
+                Scanner input = new Scanner(System.in);
                 System.out.println("How many days would you like to enter the temperature for? (between 1 and 365)");
                 // Get the next int from the user's input
                 numberOfDays = input.nextInt();
@@ -35,7 +34,6 @@ public class Main {
             } catch (Exception e) {
                 // If the user enters a value that is not an int the error will be caught and an error message will be displayed
                 System.out.println("Please enter a valid choice!");
-                Scanner input = new Scanner(System.in);
             }
         }
 
