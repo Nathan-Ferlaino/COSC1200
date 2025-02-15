@@ -35,8 +35,7 @@ public class Main {
             } catch (Exception e) {
                 // If the user enters a value that is not an int the error will be caught and an error message will be displayed
                 System.out.println("Please enter a valid choice!");
-                numberOfDays = 0;
-                input.nextString();
+                Scanner input = new Scanner(System.in);
             }
         }
 
