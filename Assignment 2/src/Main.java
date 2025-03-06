@@ -10,8 +10,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Declare a scanner object to be used throughout the program
-        Scanner input = new Scanner(System.in);
 
         // Set the condition for the while loop to false
         boolean validInput = false;
@@ -21,6 +19,7 @@ public class Main {
         // Set the condition of the while loop to valid input being true
         while (!validInput){
             try {
+                Scanner input = new Scanner(System.in);
                 System.out.println("How many days would you like to enter the temperature for? (between 1 and 365)");
                 // Get the next int from the user's input
                 numberOfDays = input.nextInt();
@@ -48,6 +47,7 @@ public class Main {
         for (int i = 0; i < numberOfDays; i++){
             while(!validInput){
                 try {
+                    Scanner input = new Scanner(System.in);
                     // Ask the user for the temperature of the current day and store that in currentTemperature
                     System.out.println("Please enter the daily high temperature for day " + (i+1));
                     currentTemperature = input.nextFloat();
@@ -69,6 +69,7 @@ public class Main {
             validInput = false;
             while(!validInput){
                 try {
+                    Scanner input = new Scanner(System.in);
                     System.out.println("Please enter the daily low temperature for day " + (i+1));
                     currentTemperature = input.nextFloat();
                     // Check to make sure the temperature is not higher than the daily high
@@ -119,9 +120,9 @@ public class Main {
             }
         }
 
-        System.out.printf("The highest temperature recorded was %.2f Degrees", highestTemperature);
-        System.out.printf("The lowest temperature recorded was %.2f Degrees", lowestTemperature);
-        System.out.printf("The average temperature across all days was %.2f Degrees", overallAverage);
+        System.out.printf("The highest temperature recorded was %.2f Degrees\n", highestTemperature);
+        System.out.printf("The lowest temperature recorded was %.2f Degrees\n", lowestTemperature);
+        System.out.printf("The average temperature across all days was %.2f Degrees\n", overallAverage);
 
     }
 }
