@@ -1,3 +1,10 @@
+/**
+ * Program: Hero.java
+ * Description: A class for setting the name and power level of a hero
+ * Date: Mar 6th, 2025
+ * @author Nathan Ferlaino
+ */
+
 public class Hero{
     private String name;
     private double power;
