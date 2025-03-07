@@ -1,3 +1,10 @@
+/**
+ * Program: VaccineDriver.java
+ * Description: A program for creating and displaying Vaccine Information
+ * Date: Mar 6th, 2025
+ * @author Nathan Ferlaino
+ */
+
 public class VaccineDriver {
 
     public VaccineDriver(){

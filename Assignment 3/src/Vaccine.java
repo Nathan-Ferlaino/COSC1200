@@ -1,3 +1,10 @@
+/**
+ * Program: Vaccine.java
+ * Description: A class for setting information about a vaccine and displaying it in a table or non-liner format
+ * Date: Mar 6th, 2025
+ * @author Nathan Ferlaino
+ */
+
 public class Vaccine {
     private int id;
     private String name;
