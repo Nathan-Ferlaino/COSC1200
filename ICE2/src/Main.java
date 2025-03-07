@@ -16,10 +16,12 @@ public class Main {
         link.display();
         mario.display();
 
-        System.out.println(link + "\n" + mario);
+        // System.out.println(link + "\n" + mario);
     }
 
     public static void main(String[] args) {
-        new Main();
+        new Main() {
+
+        };
     }
 }
