@@ -24,6 +24,21 @@ public class Vaccine {
         this.setInstructions(instructions);
     }
 
+    public void displayVaccine(boolean isTableFormat) {
+        if (isTableFormat) {
+            System.out.println();
+            System.out.printf("%-8s | %-10s | %-8s | %-5s | %-10s | %-20s%n", "ID", "Name", "cost", "Available Units", "Expiry Date", "Instructions");
+            System.out.printf("%-8s | %-10s | %-8s | %-5s | %-10s | %-20s%n", "-".repeat(8),"-".repeat(10),"-".repeat(8), "-".repeat(5),"-".repeat(10), "-".repeat(20));
+            System.out.printf("%-8d | %-10s | %-8.2f | %-5d | %-10s | %-20s%n", id, name, cost, availableUnits, expiryDate, instructions);
+        } else {
+            System.out.println("SKU: " + id);
+            System.out.println("Vaccine Name: " + name);
+            System.out.println("Unit Cost: $" + cost);
+            System.out.println("Quantity on Hand: " + availableUnits);
+            System.out.println("Expiry Date: " + expiryDate);
+            System.out.println("Special Instructions: " + instructions);
+        }
+    }
 
     public int getId() {
         return id;
