@@ -13,6 +13,9 @@ public class Vaccine {
     private String expiryDate ;
     private String instructions;
 
+    /**
+     *
+     */
     public Vaccine(){
         setId(0);
         setName("");
@@ -22,6 +25,15 @@ public class Vaccine {
         setInstructions("");
     }
 
+    /**
+     *
+     * @param id
+     * @param name
+     * @param cost
+     * @param availableUnits
+     * @param expiryDate
+     * @param instructions
+     */
     public Vaccine(int id,String name,double cost,int availableUnits,String expiryDate, String instructions ){
         this.setId(id);
         this.setName(name);
