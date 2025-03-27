@@ -1,4 +1,9 @@
-
+/**
+ * Program: Vaccine.java
+ * Description: A class for setting information about a product and displaying it in a non-liner format
+ * Date: Mar 26th, 2025
+ * @author Nathan Ferlaino
+ */
 public class Product {
     private int productID;
     private String productName;
