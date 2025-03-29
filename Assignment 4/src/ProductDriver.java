@@ -22,6 +22,11 @@ public class ProductDriver {
 
         PerishableProduct bellPepper = new PerishableProduct(10005, "Bell Pepper", 4.97, 320, 180, "Remove seeds and eat", "April 7th 2025");
 
+        Product[] products = {doormat, lamp, towel, cucumber, bellPepper};
+
+        for(int i = 0; i < products.length; i++){
+            products[i].displayProduct();
+        }
     }
 
     public static void main(String[] args){
