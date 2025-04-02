@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/ICE2/ICE2.iml" filepath="$PROJECT_DIR$/ICE2/ICE2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ICE3/ICE3.iml" filepath="$PROJECT_DIR$/ICE3/ICE3.iml" />
       <module fileurl="file://$PROJECT_DIR$/In Class Practice/In Class Practice.iml" filepath="$PROJECT_DIR$/In Class Practice/In Class Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/NumberGuessingGUI/NumberGuessingGUI.iml" filepath="$PROJECT_DIR$/untitled/NumberGuessingGUI/NumberGuessingGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
 </project>
