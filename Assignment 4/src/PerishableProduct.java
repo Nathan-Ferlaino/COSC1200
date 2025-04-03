@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 /**
  * Program: Vaccine.java
  * Description: A class for setting information about a perishable product inheriting the product class
@@ -5,7 +7,7 @@
  * @author Nathan Ferlaino
  */
 public class PerishableProduct extends Product{
-    private String expiryDate;
+    private LocalDate expiryDate;
 
     /**
      * Constructor for PerishableProduct to be used when no parameters are declared
@@ -32,23 +34,23 @@ public class PerishableProduct extends Product{
      */
     public PerishableProduct(int productID, String productName, double costPerUnit, int onHandCount, int neededQuantity, String specialInstructions, String expiryDate){
         super(productID, productName, costPerUnit, onHandCount, neededQuantity, specialInstructions);
-        this.setExpirtyDate(expiryDate);
+        this.setExpiryDate(expiryDate);
     }
 
     /**
      * A method for returning the expiryDate of the perishable product
      * @return
      */
-    public String getExpirtyDate() {
+    public LocalDate getExpirtyDate() {
         return expiryDate;
     }
 
     /**
      * a Method for setting the expiryDate of the item
-     * @param expirtyDate A string containing the expiry date
+     * @param expiryDateInput A string containing the expiry date
      */
-    public void setExpirtyDate(String expirtyDate) {
-        this.expiryDate = expirtyDate;
+    public void setExpiryDate(String expiryDateInput) {
+        this.expiryDate = LocalDate.parse(expiryDateInput);
     }
 
     /**

@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 /**
  * Program: ProductDriver.java
  * Description: A program for creating and displaying the Information of products and perishable items
@@ -18,9 +20,9 @@ public class ProductDriver {
         cucumber.setOnHandCount(230);
         cucumber.setNeededQuantity(270);
         cucumber.setSpecialInstructions("Consume");
-        cucumber.setExpirtyDate("April 4th 2025");
+        cucumber.setExpiryDate("2025-04-25");
 
-        PerishableProduct bellPepper = new PerishableProduct(10005, "Bell Pepper", 4.97, 320, 180, "Remove seeds and eat", "April 7th 2025");
+        PerishableProduct bellPepper = new PerishableProduct(10005, "Bell Pepper", 4.97, 320, 180, "Remove seeds and eat","2025-04-07");
 
         Product[] products = {doormat, lamp, towel, cucumber, bellPepper};
 

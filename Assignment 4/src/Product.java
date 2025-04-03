@@ -59,7 +59,7 @@ public class Product {
      * Get the ID of the product
      * @return Return an int with the product ID
      */
-    public int getProductID() {
+    public final int getProductID() {
         return productID;
     }
 
@@ -67,7 +67,7 @@ public class Product {
      * Set the ID of the product
      * @param productID The ID of the product as an int
      */
-    public void setProductID(int productID) {
+    public final void setProductID(int productID) {
         this.productID = productID;
     }
 
@@ -75,7 +75,7 @@ public class Product {
      * Get the name of the product
      * @return A String containing the name of the product
      */
-    public String getProductName() {
+    public final String getProductName() {
         return productName;
     }
 
@@ -83,7 +83,7 @@ public class Product {
      * Set the name of the product
      * @param productName A string containing the name of the product
      */
-    public void setProductName(String productName) {
+    public final void setProductName(String productName) {
         this.productName = productName;
     }
 
@@ -91,7 +91,7 @@ public class Product {
      * Return the cost of the product per unit
      * @return An int representing the dollar amount that it costs for each unit
      */
-    public double getCostPerUnit() {
+    public final double getCostPerUnit() {
         return costPerUnit;
     }
 
@@ -99,7 +99,7 @@ public class Product {
      * Set the cost per unit of the product
      * @param costPerUnit An int representing the dollar amount that it costs for each unit
      */
-    public void setCostPerUnit(double costPerUnit) {
+    public final void setCostPerUnit(double costPerUnit) {
         this.costPerUnit = costPerUnit;
     }
 
@@ -107,7 +107,7 @@ public class Product {
      * Get the amount of items currently on hand (in stock_
      * @return the amount of the product on hand as an int
      */
-    public int getOnHandCount() {
+    public final int getOnHandCount() {
         return onHandCount;
     }
 
@@ -115,7 +115,7 @@ public class Product {
      * Set the amount of the product currently on hand
      * @param onHandCount The amount of the product on hand as an int
      */
-    public void setOnHandCount(int onHandCount) {
+    public final void setOnHandCount(int onHandCount) {
         this.onHandCount = onHandCount;
     }
 
@@ -123,7 +123,7 @@ public class Product {
      * Get the number of items that need to be ordered
      * @return int representing the amount of the product that is needed
      */
-    public int getNeededQuantity() {
+    public final int getNeededQuantity() {
         return neededQuantity;
     }
 
@@ -131,7 +131,7 @@ public class Product {
      * Set the amount of the product that needs to be ordered
      * @param neededQuantity int representing the amount of the product that is needed
      */
-    public void setNeededQuantity(int neededQuantity) {
+    public final void setNeededQuantity(int neededQuantity) {
         this.neededQuantity = neededQuantity;
     }
 
@@ -139,7 +139,7 @@ public class Product {
      * Get any special instructions relating to the item
      * @return A string containing special instructions for the item
      */
-    public String getSpecialInstructions() {
+    public final String getSpecialInstructions() {
         return specialInstructions;
     }
 
@@ -147,7 +147,7 @@ public class Product {
      * Set any special instructions relating to the item
      * @param specialInstructions A string containing special instructions for the item
      */
-    public void setSpecialInstructions(String specialInstructions) {
+    public final void setSpecialInstructions(String specialInstructions) {
         this.specialInstructions = specialInstructions;
     }
 }
